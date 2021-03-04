@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remont.kompresoriv</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__left">
+      <h2>Ремонт компресорів</h2>
+      <nav>
+        <ul class="menu">
+          <li><a href="ghbntkontakty/index2.html" target="_blank">Контакти</a></li>
+          <li id="filter-open" class="open">Товари</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__right">
+      <span class="open" id="btn-open-cart">Кошик</span>
+    </div>
+  </header>
+  <div class="wrapper">
+    <input type="radio" name="point" id="slide1" checked>
+    <input type="radio" name="point" id="slide2">
+    <input type="radio" name="point" id="slide3">
+    <input type="radio" name="point" id="slide4">
+    <input type="radio" name="point" id="slide5">
+    <div class="slider">
+      <div class="slides slide1"></div>
+      <div class="slides slide2"></div>
+      <div class="slides slide3"></div>
+      <div class="slides slide4"></div>
+      <div class="slides slide5"></div>
+    </div>
+    <div class="controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+      <label for="slide5"></label>
+    </div>
+  </div>
+  <div id="backetShop" class="cart">
+    <button class="delete_order button" id="clearCart">Очистити кошик</button>
+    <span id="closeBacketShop" class="btn-close">&#10006;</span>
+    <div id="cartCont"></div>
+  </div>
+  <main class="main">
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/1179224875_w325_h250_manometr-dlya-kompressora.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Манометр для компресора</h3>
+        <span class="price" id="price">90грн</span>
+        <button data-id="0" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/1179225651_w325_h250_manometr-dlya-kompressora.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Манометр для компресора</h3>
+        <span class="price">100грн</span>
+        <button data-id="1" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/1254536089_w325_h250_reduktor-na-kompressor.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Редуктор на компресор з манометром</h3>
+        <span class="price">280грн</span>
+        <button data-id="2" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/1242077135_w325_h250_reduktor-na-kompressor.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Редуктор на компресор вхід-1/4 виходи 1/4*1/8</h3>
+        <span class="price">220грн</span>
+        <button data-id="3" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/792791883_w325_h250_komplekt-kolets-lb.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Комплект колець LB 30-40</h3>
+        <span class="price">250грн</span>
+        <button data-id="4" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/1000300785_w325_h250_komplekt-kolets-lb.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Комплект колець LB 50-75</h3>
+        <span class="price">250грн</span>
+        <button data-id="5" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/670129163_w325_h250_komplekt-prokladok-lb.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Комплект прокладок LB 50</h3>
+        <span class="price">250грн</span>
+        <button data-id="6" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/670129163_w325_h250_komplekt-prokladok-lb.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Комплект прокладок LB 75</h3>
+        <span class="price">280грн</span>
+        <button data-id="7" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/675991587_w325_h250_korpus-filtra-lb.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Корпус фільтра LB 30-40</h3>
+        <span class="price">100грн</span>
+        <button data-id="8" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/675990874_w325_h250_filtr-lb-30-40.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Фільтр LB 30-40</h3>
+        <span class="price">70грн</span>
+        <button data-id="9" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/719876596_w325_h250_plastina-klapana-11h57.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Пластина клапану 11Х57</h3>
+        <span class="price">25грн</span>
+       <button data-id="10" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/719878063_w325_h250_plastina-klapana-10h47.jpg">
+      <div class="product-list">
+        <h3 class="product-title">Пластина клапану 10Х47</h3>
+        <span class="price">25грн</span>
+        <button data-id="11" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/719878442_w325_h250_plastina-klapana-11h52.jpg">
+      <div class="product-list">
+        <h3 class="product-title">ПЛАСТИНА КЛАПАНУ 11Х52</h3>
+        <span class="price">25грн</span>
+        <button data-id="12" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/719879271_w325_h250_komplekt-prokladok.jpg">
+      <div class="product-list">
+        <h3 class="product-title">КОМПЛЕКТ ПРОКЛАДОК</h3>
+        <span class="price">100грн</span>
+        <button data-id="13" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/719879685_w325_h250_komplekt-prokladok.jpg">
+      <div class="product-list">
+        <h3 class="product-title">КОМПЛЕКТ ПРОКЛАДОК</h3>
+        <span class="price">60грн</span>
+        <button data-id="14" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/792794300_w325_h250_komplekt-prokladok-lb.jpg">
+      <div class="product-list">
+        <h3 class="product-title">КОМПЛЕКТ ПРОКЛАДОК LB 30</h3>
+        <span class="price">200грн</span>
+        <button data-id="15" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/931931663_w325_h250_plastina-klapana-za.jpg">
+      <div class="product-list">
+        <h3 class="product-title">ПЛАСТИНА КЛАПАНУ ZA 65</h3>
+        <span class="price">30грн</span>
+        <button data-id="16" class="button">У корзину</button>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/931933670_w325_h250_prokladka-kryshki-kompressora.jpg">
+      <div class="product-list">
+        <h3 class="product-title">ПРОКЛАДКА КРИШКИ КОМПРЕС. ZA 65</h3>
+        <span class="price">80грн</span>
+        <button data-id="17" class="button">У корзину</button>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/931935960_w325_h250_prokladka-kompressora-za.jpg">
+      <div class="product-list">
+        <h3 class="product-title">ПРОКЛАДКА КОМПРЕСОРА ZA 65</h3>
+        <span class="price">150грн</span>
+        <button data-id="18" class="button">У корзину</button>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/674472962_w325_h250_porshen-d47-mm.jpg">
+      <div class="product-list">
+        <h3 class="product-title">ПОРШЕНЬ D47 MM</h3>
+        <span class="price">100грн</span>
+        <button data-id="19" class="button">У корзину</button>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <img src="https://images.ua.prom.st/960340596_w325_h250_vozdushnyj-filtr-kompressora.jpg">
+      <div class="product-list">
+        <h3 class="product-title">ПОВІТРЯНИЙ ФІЛЬТР КОМПРЕСОРА</h3>
+        <span class="price">100грн</span>
+        <button data-id="20" class="button">У корзину</button>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <img src="https://i.pinimg.com/originals/8a/eb/d8/8aebd875fbddd22bf3971c3a7159bdc7.png">
+      <div class="product-list">
+        <h3 class="product-title">Ремонт компресорів LB 30-40</h3>
+        <span class="price">???грн</span>
+        <button data-id="21" class="button">У корзину</button>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <img src="https://i.pinimg.com/originals/8a/eb/d8/8aebd875fbddd22bf3971c3a7159bdc7.png">
+      <div class="product-list">
+        <h3 class="product-title">???</h3>
+        <span class="price">???грн</span>
+        <button data-id="22" class="button">У корзину</button>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <img src="https://i.pinimg.com/originals/8a/eb/d8/8aebd875fbddd22bf3971c3a7159bdc7.png">
+      <div class="product-list">
+        <h3 class="product-title">???</h3>
+        <span class="price">???грн</span>
+        <button data-id="23" class="button">У корзину</button>
+      </div>
+    </div>
+  </main>
+  <div class="filter d-none" id="modal-window">
+    <span id="close" class="btn-close">&#10006;</span>
+    <div class="filter-content">
+      <ul>
+        <li><a href="saits/index111.html" target="_blank">Запчастини на компресори ПКС</a></li>
+        <li><a href="saits/index222.html" target="_blank">Запчастини LT100, FB1105,2105 ЕПКУ</a></li>
+        <li><a href="saits/index333.html" target="_blank">Запчастини компресора LB 50-75</a></li>
+      </ul>
+      <ul>
+        <li><a href="saits/index444.html" target="_blank">Запчастини компресора LB 30-40</a></li>
+        <li><a href="saits/index555.html" target="_blank">Компресор ZA 65, Shiningberg</a></li>
+        <li><a href="saits/index666.html" target="_blank">Компресора Китай</a></li>
+      </ul>
+      <ul>
+        <li><a href="saits/index777.html" target="_blank">Редуктори, манометри, лубрикатори, вологовідділювачі</a></li>
+        <li><a href="saits/index888.html" target="_blank">Компресорні блоки</a></li>
+        <li><a href="saits/index999.html" target="_blank">Запчастини до компесора (FINI, DARI)</a></li>
+      </ul>
+      <ul>
+        <li><a href="saits/index101010.html" target="_blank">Насосне Обладнення</a></li>
+        <li><a href="saits/index111111.html" target="_blank">Ручний інструмент</a></li>
+        <li><a href="saits/index121212.html" target="_blank">Сантехніка</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="./cart/cart.js"></script>
+  <script src="javascript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
